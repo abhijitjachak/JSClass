@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Value 1: <input type="text" id="num1"> <br><br>
+    Enter Value 2: <input type="text" id="num2"> <br><br>
+
+    <button onclick="calculation('addition')"> + </button>
+    <button onclick="calculation('substraction')"> - </button>
+    <button onclick="calculation('multiplication')"> * </button>
+    <button onclick="calculation('division')"> / </button> <br><br>
+
+    Results: <span id="finalresult"></span>
+    <script>
+        function calculation(option) {
+            const number1 = document.getElementById('num1').value;
+            const number2 = document.getElementById('num2').value;
+            const result = document.getElementById('finalresult');
+
+            if (option == 'addition') {
+                result.innerHTML = Number(number1) + Number(number2);
+            } else if (option == 'substraction') {
+                result.innerHTML = number1 - number2;
+            } else if (option == 'multiplication') {
+                result.innerHTML = number1 * number2;
+            } else if (option == 'division') {
+                result.innerHTML = number1 + number2;
+            }
+        }
+    </script>
+</body>
+</html>

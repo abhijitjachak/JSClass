@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    Number 1: <input type="number" id="num1"><br><br>
+    Number 2: <input type="number" id="num2"><br><br>
+
+    <button onclick="addition();"> addition </button>
+    <button onclick="multiplication()"> Multiplication </button>
+    <button onclick="substraction()"> Substraction </button>
+    <button onclick="divide()"> Divide </button><br><br>
+    Result: <span id="result"> </span>
+    <script>
+        function addition() {
+            let num1 =  document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let result = num1 + num2;
+            document.getElementById('result').innerHTML=result;    
+        }
+
+        function multiplication(){
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let result = num1 * num2;
+            document.getElementById('result').innerHTML=result;
+        }
+
+        function substraction() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let result = num1 - num2;
+            document.getElementById('result').innerHTML=result;
+        }
+
+        function divide() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let result = num1 / num2;
+            document.getElementById('result').innerHTML=result;
+        }
+
+    </script>
+
+    <script>
+        // const marks = [30,60,20,40,80];
+
+        // // Sum of all elements
+        // let sum=0;
+        // for(let i=0; i<marks.length; i++) {
+        //     sum+= marks[i];
+        //     console.log(sum);
+        // }
+
+        // Largest numner of array
+        // let large = 0;
+        // let large = marks[0];
+        // for (let i = 0; i < marks.length; i++) {
+        //     if (marks[i] > large) {
+        //         large = marks[i];
+        //         console.log("Largest number in array:" + large);
+        //     }
+        // }
+        
+
+        // Smallest number of array
+        // let small = marks[0];
+        // for(let i = 0; i < marks.length; i++){
+        //     if(marks[i] < small ){
+        //         small = marks[i];
+        //     }
+        // }
+        // console.log("Smalest number in array:" + small);
+    </script>
+</body>
+</html>
+
+
+<!-- // 70.00 - 100.00	First Class with Distinction
+// 60.00 - 69.99	First Class
+// 50.00 - 59.99	Second Class
+// 40.00 - 49.99	Third Class -->

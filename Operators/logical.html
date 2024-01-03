@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Logical Operator </title>
+</head>
+<body>
+	<script>
+		let marks = prompt('Enter Your Marks');
+		let message = '';
+
+		if (marks == null) {
+			message = 'Value is NULL';							
+		} 	else if (marks >= 35 && marks <= 40) {
+				message = 'Student grade is between 35 to 40';
+		}	else if (marks >= 41 && marks <= 60) {
+				message = 'Student grade is between 41 to 60';
+		} 	else if (marks >= 61 && marks <= 80) {
+				message = 'Student grade is between 61 to 80';
+		} 	else if (marks >= 81 && marks <= 100) {
+				message = 'Student grade is between 81 to 100';
+		} 	else {
+				message = 'Student is Not Eligible';
+		}
+
+		document.write(`<div class="message"> ${message} </div>`);
+
+		document.write(`<style>
+							.message {
+								text-align: center;
+								font-size: 45px;
+								padding: 10%;
+								background: black;
+								width: 50%;
+								color: white;
+								margin: 0 auto;
+							}
+
+							body {
+								display: flex;
+								align-items: center;
+								height: 100vh;
+							}
+							</style>`);	
+	</script>
+</body>
+</html>
